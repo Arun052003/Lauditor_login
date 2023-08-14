@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Under_line"><u>Forget Password?</u></string>
+    <string-array name="List">
+        <item> RSB Associates</item>
+        <item> Akhila and Associates-prod test 01</item>
+        <item>Developer</item>
+    </string-array>
+</resources>
