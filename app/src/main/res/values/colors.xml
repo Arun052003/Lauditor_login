@@ -5,4 +5,13 @@
     <color name="blue">#0B5A9A</color>
     <color name="orange">#F87247</color>
     <color name="grey">#E4DEDE</color>
+    <color name="Red">#C60B12</color>
+    <color name="Primary"/>
+<color name="background_tint_color">#0B5A9A</color>
+<color name="material_dynamic_neutral30">#FFDDDDDD</color>
+<color name="material_dynamic_neutral50">#FF888888</color>
+<color name="material_dynamic_neutral90">#E1E3E5</color>
+<color name="material_dynamic_neutral100">#FF000000</color>
+<color name="material_dynamic_neutral_variant1">#AABBCC</color>
+<color name="material_dynamic_neutral_variant0">#FF000000</color>
 </resources>

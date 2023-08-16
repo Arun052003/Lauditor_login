@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +11,7 @@
 
 <!--cardview for Layout Design-->
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardview"
+        android:id="@+id/cardvieww"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
@@ -30,11 +31,11 @@
             android:background="@color/white"
             android:orientation="vertical"
             android:padding="24dp"
-            app:layout_constraintBottom_toBottomOf="@id/cardview"
+            app:layout_constraintBottom_toBottomOf="@id/cardvieww"
             app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintEnd_toEndOf="@id/cardview"
-            app:layout_constraintStart_toStartOf="@id/cardview"
-            app:layout_constraintTop_toBottomOf="@id/cardview">
+            app:layout_constraintEnd_toEndOf="@id/cardvieww"
+            app:layout_constraintStart_toStartOf="@id/cardvieww"
+            app:layout_constraintTop_toBottomOf="@id/cardvieww">
 
             <!--Logo for Lauditor Design-->
             <ImageView
@@ -67,6 +68,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="291dp"
+                app:cardBackgroundColor="@color/white"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -78,6 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="13dp"
+                    app:cardBackgroundColor="@color/white"
                     android:layout_marginTop="4dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="20dp"
@@ -89,6 +92,7 @@
                     android:id="@+id/sp_firm"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
+                    app:cardBackgroundColor="@color/white"
                     android:layout_marginLeft="12dp"
                     android:layout_marginTop="20dp"
                     android:drawablePadding="7dp"
@@ -108,11 +112,14 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/white"
                 app:cardElevation="8dp">
 
                 <!--password field layout-->
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
+                    android:id="@+id/password_back"
+                    app:cardBackgroundColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textAlignment="center"
@@ -125,6 +132,7 @@
                         android:id="@+id/et_login_password"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/white"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="5dp"
                         android:layout_marginLeft="0dp"
