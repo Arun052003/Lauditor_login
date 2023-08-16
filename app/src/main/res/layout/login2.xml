@@ -184,11 +184,11 @@
                         android:fontFamily="@font/gillsanslight"
                         android:padding="8dp"
 
-                        android:textColor="@color/blue"
+                        android:textColor="@color/black"
                         android:textColorHighlight="@color/white"
                         android:textColorHint="@color/white"
                         android:textColorLink="@color/white"
-                        app:buttonTint="@color/white"
+                        app:buttonTint="@color/blue"
                         tools:ignore="TouchTargetSizeCheck" />
                 </androidx.cardview.widget.CardView>
 
