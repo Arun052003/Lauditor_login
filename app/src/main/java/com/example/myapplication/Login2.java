@@ -27,22 +27,13 @@ public class Login2 extends AppCompatActivity {
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if (validateAndSubmit()){;
+                validateAndSubmit();
                 Intent intent=new Intent(Login2.this,MainActivity.class);
                 startActivity(intent);
-            } else {
-                   
-               }
-            }     
+            }
         });
-    
-      buttonCancel.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              finish();
-          }
-      });
     }
+
 
 
 

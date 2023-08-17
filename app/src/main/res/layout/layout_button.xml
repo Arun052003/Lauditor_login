@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="320dp"
+    android:layout_height="65dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout_button"
     android:orientation="horizontal">
@@ -11,6 +11,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:layout_marginLeft="32dp">
@@ -37,11 +38,11 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             app:cardElevation="8dp"
-            android:background="@android:color/transparent"
             app:cardCornerRadius="8dp"
-            android:layout_marginLeft="22dp">
+            android:layout_marginLeft="32dp">
 
             <!--Submit button-->
 
@@ -53,6 +54,7 @@
                 android:textStyle="bold"
                 android:background="@color/blue"
                 android:fontFamily="@font/gillsanslight"
+                android:layout_gravity="center_horizontal"
                 android:text="Submit"
                 android:textSize="16sp"
                 android:textAllCaps="false"

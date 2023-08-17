@@ -7,21 +7,24 @@
     tools:context=".lauditor_file">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img"
-        android:id="@+id/lauditor_img"/>
+        android:id="@+id/lauditor_img"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="59dp"
+        android:src="@drawable/img" />
 
     <TextView
         android:id="@+id/forget_pwd"
-        android:layout_width="314dp"
-        android:layout_height="94dp"
+        android:layout_width="378dp"
+        android:layout_height="56dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="200dp"
-        android:background="@color/grey"
+        android:background="@drawable/stroke_btn"
         android:fontFamily="@font/gillsanslight"
-        android:text="Thank you for registering"
-        android:textColor="@color/orange"
+        android:text="Thank you for registering.."
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/blue"
         android:textSize="30dp" />
 
 </LinearLayout>
