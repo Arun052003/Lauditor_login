@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Lauditor Login</string>
     <string name="Under_line"><u>Forget Password?</u></string>
     <string-array name="List">
         <item> RSB Associates</item>
