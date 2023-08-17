@@ -215,8 +215,27 @@
 
             <!-- TextView for "Forget Password?" -->
 
-            <include layout="@layout/layout_button"></include>
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:fontFamily="@font/gillsanslight"
+                android:gravity="left"
+
+                android:minHeight="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/Under_line"
+
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <include layout="@layout/layout_button"/>
             <!-- Enable Biometric Autentication Text -->
 
         </LinearLayout>
