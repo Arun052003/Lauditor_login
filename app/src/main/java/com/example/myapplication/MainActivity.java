@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputLayout password_bg;
     TextInputEditText et_login_password;;
     Button submit, cancel;
-    Context context;
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +49,35 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, lauditor_file.class);
                     startActivity(intent);
                 } else {
-                    showPopupMessage("Invalid password.");
+                    et_login_password.setText("");
+                    showPopupMessage("Invalid password.Please check !");
                 }
+            }
+        });
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MaterialAlertDialogBuilder alertDialog = new MaterialAlertDialogBuilder(context);
+                alertDialog.setTitle("EXIT:");
+                alertDialog.setMessage("Do you want to cancel");
+                alertDialog.setCancelable(false);
+                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(getApplicationContext(),Login2.class);
+                        startActivity(intent);
+                    }
+                });
+                alertDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+                AlertDialog alert = alertDialog.create();
+                alert.show();
             }
         });
     }

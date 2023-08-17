@@ -92,14 +92,14 @@
                     android:id="@+id/sp_firm"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
-                    app:cardBackgroundColor="@color/white"
+                    android:dropDownSelector="@drawable/rectangular_button_background"
+                    android:spinnerMode="dropdown"
+                    android:dropDownWidth="280dp"
                     android:layout_marginLeft="12dp"
                     android:layout_marginTop="20dp"
                     android:drawablePadding="7dp"
-                    android:dropDownSelector="@color/white"
                     android:entries="@array/List"
                     android:fontFamily="@font/gillsanslight"
-                    android:scrollbarAlwaysDrawVerticalTrack="true"
                     android:text="" />
             </androidx.cardview.widget.CardView>
 
@@ -153,12 +153,11 @@
             </androidx.cardview.widget.CardView>
 
             <!--Forget password button-->
-
-            <Button
+            <TextView
                 android:id="@+id/forgetpwdd"
                 android:layout_width="168dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="-14dp"
                 android:layout_height="37dp"
                 android:background="@android:color/transparent"
                 android:backgroundTint="@color/white"

@@ -121,36 +121,38 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="0"
-                        android:tooltipText="Password"
-                        app:boxCornerRadiusBottomEnd="24dp"
-                        app:boxCornerRadiusBottomStart="24dp"
-                        app:boxCornerRadiusTopEnd="24dp"
-                        app:boxCornerRadiusTopStart="24dp"
+                        android:textAlignment="center"
+                        android:tooltipText="password"
                         app:passwordToggleEnabled="true"
                         app:passwordToggleTint="@color/black">
 
+                        <!--password text field-->
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/et_login_password"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0"
+                            android:layout_height="50dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@android:color/transparent"
                             android:drawablePadding="5dp"
+                            android:inputType="textPassword"
                             android:fontFamily="@font/gillsanslight"
                             android:hint="Password"
-                            android:imeOptions="actionDone"
-                            android:inputType="textPassword"
-                            android:paddingBottom="8dp"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="25dp"
                             android:text=""
-                            android:textColorHint="@color/black"
-                            tools:ignore="TouchTargetSizeCheck" />
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black" />
                     </com.google.android.material.textfield.TextInputLayout>
-
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -233,65 +235,7 @@
                 android:textStyle="bold"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <!-- Space to create equal spacing around buttons -->
-                <Space
-                    android:layout_width="0.5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button5"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/rectangular_button_background"
-                    android:fontFamily="@font/gillsanslight"
-                    android:text="Cancel"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/material_dynamic_neutral90"
-                    app:cornerRadius="12dp" />
-
-                <Space
-                    android:layout_width="20dp"
-                    android:layout_height="5dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button6"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/rectangular_button_background"
-                    android:fontFamily="@font/gillsanslight"
-                    android:paddingStart="0dp"
-                    android:paddingEnd="0dp"
-                    android:paddingRight="0dp"
-                    android:text="Submit"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="#0B5A9A"
-                    app:cornerRadius="12dp" />
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
+            <include layout="@layout/layout_button"/>
             <!-- Enable Biometric Autentication Text -->
 
         </LinearLayout>
