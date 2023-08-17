@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import android.util.Patterns;
 
+import java.util.regex.Pattern;
+
 public class ValidationUtils {
 
     public static boolean isValidEmail(String email) {
@@ -9,7 +11,7 @@ public class ValidationUtils {
     }
 
     public static boolean isValidPassword(String password) {
-
-        return password.length() >= 8;
+        // At least 8 characters, containing at least one letter and one digit
+        return password != null && Pattern.compile("^(?=.*[a-zA-Z])(?=.*\\d).{8,}$").matcher(password).matches();
     }
 }
