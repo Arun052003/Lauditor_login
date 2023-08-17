@@ -14,6 +14,8 @@
         android:layout_width="371dp"
         android:layout_height="508dp"
         android:layout_margin="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -190,7 +192,7 @@
                         android:textColorHighlight="@color/white"
                         android:textColorHint="@color/white"
                         android:textColorLink="@color/white"
-                        app:buttonTint="@color/blue"
+                        app:buttonTint="@color/white"
                         tools:ignore="TouchTargetSizeCheck" />
                 </androidx.cardview.widget.CardView>
 
