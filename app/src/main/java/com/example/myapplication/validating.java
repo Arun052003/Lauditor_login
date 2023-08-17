@@ -38,6 +38,38 @@ public class validating {
             return true;
         }return  false;
     }
+    public boolean validate_username(String username)
+    {
+        boolean haswhitespace = false;
+        boolean hasuppercase = false;
+        boolean hasempty = false;
+        boolean haslength = false;
+        boolean hasspecial_char=false;
+        char[] password_character = username.toCharArray();
+        for(int i=0;i<username.length();i++)
+        {
+            if (!username.isEmpty()) {
+                hasempty = true;
+            }
+            if (Character.isUpperCase(password_character[i])) {
+                hasuppercase = true;
+            }
+            if(!Character.isDigit(password_character[i]))
+            {
+                hasspecial_char=true;
+            }
+            if (!username.contains(" ")) {
+                haswhitespace = true;
+            }
+            if (username.length() >= 8) {
+                haslength = true;
+            }
+        }
+        if ((hasempty) && (haslength) && (haswhitespace) && (hasuppercase)&&(hasspecial_char)) {
+            return true;
+        }return  false;
+    }
+
 }
     
     
