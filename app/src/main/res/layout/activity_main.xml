@@ -102,14 +102,14 @@
                 layout="@layout/password_layout"/>
 
             <!--Forget password button-->
-<include layout="@layout/forget_password_layout" />
-
+            <include layout="@layout/forget_password_layout" />
+            <!-- Button layout-->
             <include
                 layout="@layout/layout_button"
-                android:layout_width="310dp"
+                android:layout_width="321dp"
                 android:layout_height="62dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
             <!--End of Submitions button layout-->
             </LinearLayout>
         <!--End of design-->

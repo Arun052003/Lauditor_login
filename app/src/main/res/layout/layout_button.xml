@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
+    android:layout_width="320dp"
     android:layout_height="65dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout_button"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
-            android:layout_marginLeft="28dp">
+            android:layout_marginLeft="32dp">
 
             <!--Submit button-->
 
@@ -54,6 +54,7 @@
                 android:textStyle="bold"
                 android:background="@color/blue"
                 android:fontFamily="@font/gillsanslight"
+                android:layout_gravity="center_horizontal"
                 android:text="Submit"
                 android:textSize="16sp"
                 android:textAllCaps="false"
