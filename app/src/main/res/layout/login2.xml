@@ -215,85 +215,8 @@
 
             <!-- TextView for "Forget Password?" -->
 
+            <include layout="@layout/layout_button"></include>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start|center_horizontal"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:fontFamily="@font/gillsanslight"
-                android:gravity="left"
-
-                android:minHeight="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/Under_line"
-
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <!-- Space to create equal spacing around buttons -->
-                <Space
-                    android:layout_width="0.5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button5"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/rectangular_button_background"
-                    android:fontFamily="@font/gillsanslight"
-                    android:text="Cancel"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/material_dynamic_neutral90"
-                    app:cornerRadius="12dp" />
-
-                <Space
-                    android:layout_width="20dp"
-                    android:layout_height="5dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button6"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/rectangular_button_background"
-                    android:fontFamily="@font/gillsanslight"
-                    android:paddingStart="0dp"
-                    android:paddingEnd="0dp"
-                    android:paddingRight="0dp"
-                    android:text="Submit"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="#0B5A9A"
-                    app:cornerRadius="12dp" />
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
             <!-- Enable Biometric Autentication Text -->
 
         </LinearLayout>

@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, lauditor_file.class);
                     startActivity(intent);
                 } else {
-                    password_bg.setBoxStrokeColor(Color.RED);
-                    showPopupMessage("Invalid password.Please check password contains Special character,uppercase and digits");
+                    et_login_password.setText("");
+                    showPopupMessage("Invalid password.Please check !");
                 }
             }
         });

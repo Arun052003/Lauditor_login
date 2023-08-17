@@ -22,7 +22,7 @@ public class Login2 extends AppCompatActivity {
 
         etEmail = findViewById(R.id.et_login_email);
         etPassword = findViewById(R.id.et_login_password);
-        buttonSubmit = findViewById(R.id.button6);
+        buttonSubmit = findViewById(R.id.Submit);
 
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
