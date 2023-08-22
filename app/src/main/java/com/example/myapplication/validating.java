@@ -1,4 +1,6 @@
 package com.example.myapplication;
+import android.util.Patterns;
+
 import java.lang.String;
 
 public class validating {
@@ -69,7 +71,13 @@ public class validating {
             return true;
         }return  false;
     }
-
+    public boolean validate_email(String email)
+    {
+        if(Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        {
+            return true;
+        }return false;
+    }
 }
     
     
