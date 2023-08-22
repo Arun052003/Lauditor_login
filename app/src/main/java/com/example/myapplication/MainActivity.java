@@ -40,11 +40,16 @@ public class MainActivity extends AppCompatActivity {
         cancel = findViewById(R.id.Cancel);
         password_bg = findViewById(R.id.password_back);
         et_login_password = findViewById(R.id.et_login_password);
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //validating user_credential
+
                 validating person1 = new validating();
                 String password = et_login_password.getText().toString();
+
+                //validate password...
                 Boolean validate_check = person1.validate_password(password);
                 if (validate_check) {
                     Intent intent = new Intent(MainActivity.this, lauditor_file.class);
@@ -58,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //Alert box for cancel submition...
                 MaterialAlertDialogBuilder alertDialog = new MaterialAlertDialogBuilder(context);
                 alertDialog.setTitle("EXIT:");
                 alertDialog.setMessage("Do you want to cancel");
@@ -82,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    //method for pop-up message...
     private void showPopupMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }

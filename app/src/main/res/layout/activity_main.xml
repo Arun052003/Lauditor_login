@@ -102,14 +102,26 @@
                 layout="@layout/password_layout"/>
 
             <!--Forget password button-->
-            <include layout="@layout/forget_password_layout" />
+            <TextView
+                android:id="@+id/forgetpwdd"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gillsanslight"
+                android:text="@string/Under_line"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
             <!-- Button layout-->
             <include
                 layout="@layout/layout_button"
                 android:layout_width="321dp"
                 android:layout_height="62dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="20dp" />
             <!--End of Submitions button layout-->
             </LinearLayout>
         <!--End of design-->
